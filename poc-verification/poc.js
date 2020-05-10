@@ -28,9 +28,9 @@ function floorgangconfirmed(ppsize) {
         }
   console.log(pptext);
         resultEl.innerText =
-          pptext + " \nThis test took you: " +
-          Math.round((Date.now() - startDate) / (60 * 1000)) +
-          " minutes";
+          pptext + " \nThis test took you: 50 minutes"
+          //Math.round((Date.now() - startDate) / (60 * 1000)) +
+          //" minutes";
         resultContent.style.visibility = "";
         questionEl.innerText = questions[index];
     positionEl.innerText = index + 1 + "/" + questions.length;
