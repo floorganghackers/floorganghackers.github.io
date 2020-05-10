@@ -19,12 +19,14 @@
 var pptext;
 function floorgangconfirmed(ppsize) {
       questionContent.hidden = true;
+  console.log("ppsize is " + ppsize);
         if(ppsize = "big") {
           pptext = "Congratulations,you have passed the PoC test! Please contact our journalists on Discord with your Test ID."
         }
         if(ppsize = "smol") {
           pptext = "You failed. Have any questions? Please contact our journalists on Discord with your Test ID."
         }
+  console.log(pptext);
         resultEl.innerText =
           pptext + " \nThis test took you: " +
           Math.round((Date.now() - startDate) / (60 * 1000)) +
