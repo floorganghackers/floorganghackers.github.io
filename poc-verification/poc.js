@@ -16,22 +16,9 @@
   let combo = 0;
   let startDate = Date.now();
   let last = Date.now();
-
-
-  
-  async function result() {
-    const res = await fetch(
-      "/quizz-result/" + testID
-    );
-    if (!res.ok) throw new Error("It's complicated");
-    resultEl.innerText = res.text;
-    resultContent.style.visibility = "";
-  }
-
+var pptext;
 function floorgangconfirmed(ppsize) {
-      //if (false) {
       questionContent.hidden = true;
-
         if(ppsize = "big") {
           pptext = "Congratulations,you have passed the PoC test! Please contact our journalists on Discord with your Test ID."
         }
@@ -52,7 +39,6 @@ function floorgangconfirmed(ppsize) {
     let animationLength = 0;
     questionContent.offsetHeight;
     questionContent.style.animationName = "";
-    last = Date.now();
-      });
-   
+    last = Date.now();  
+  
 }
